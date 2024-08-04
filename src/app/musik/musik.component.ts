@@ -1,12 +1,15 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit,createComponent } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-musik',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './musik.component.html',
   styleUrls: ['./musik.component.css']
 })
 export class MusikComponent implements OnInit, AfterViewInit {
+  
   audioPlayer!: HTMLAudioElement;
   isPlaying: boolean = false;
   audioSource = '/assets/ph.mp3'; // Ganti dengan path file audio Anda
