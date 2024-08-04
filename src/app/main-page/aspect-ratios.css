@@ -1,0 +1,17 @@
+/* Aspect Ratios */
+.aspect-1-1 {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .aspect-2-1 {
+    aspect-ratio: 2 / 1;
+  }
+  
+  .aspect-1-2 {
+    aspect-ratio: 1 / 2;
+  }
+  
+  .aspect-3-4 {
+    aspect-ratio: 3 / 4;
+  }
+  

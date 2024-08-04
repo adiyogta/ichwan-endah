@@ -1,0 +1,47 @@
+<div class="container mx-auto px-4 py-8">
+    <form (ngSubmit)="submitForm()" class="max-w-5xl mx-auto bg-card-2 bgijo shadow-xl rounded-lg p-8 text-white text-center">
+      <h2 class="text-2xl font-bold mb-6 text-center text-white bg-red-900 rounded-lg bg-opacity-50 py-2">RSVP</h2>
+      
+      <div class="relative mb-6">
+        <label for="nama" class="block mb-2 text-sm font-medium text-white">Nama</label>
+        <input type="text" id="nama" name="nama" [(ngModel)]="guest.nama" required placeholder="Nama Anda"
+               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      
+      <div class="relative mb-6">
+        <label for="ucapan" class="block mb-2 text-sm font-medium text-white">Ucapan</label>
+        <textarea id="ucapan" name="ucapan" [(ngModel)]="guest.ucapan" required
+                  class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  placeholder="Tulis ucapan Anda"></textarea>
+      </div>
+      
+      <div class="relative mb-6">
+        <label for="kehadiran" class="block mb-2 text-sm font-medium text-white">Kehadiran</label>
+        <select id="kehadiran" name="kehadiran" [(ngModel)]="guest.kehadiran" required
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <option value="" disabled selected>Pilih kehadiran</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+      </div>
+      
+      <button type="submit"
+              class="w-full font-bold text-red-900 py-3 px-4 rounded-full bg-red-100 hover:bg-white text-white hover:text-red-900 transition duration-300">
+        Kirim Ucapan
+      </button>
+    </form>
+  </div>
+  
+  
+  <!-- Modal Component -->
+  <div *ngIf="isModalOpen" class="fixed inset-0 bg-gray-600 bg-opacity-70 flex items-center justify-center z-50 text-center">
+    <div class="bg-green-600 p-8 rounded-lg shadow-xl max-w-md w-full mx-4">
+      <h3 class="text-xl font-bold mb-4 text-white">{{ modalTitle }}</h3>
+      <p class="text-white mb-6">{{ modalMessage }}</p>
+      <button (click)="closeModal()" 
+              class="rounded font-bold text-green-900 py-3 px-4 rounded-lg bg-green-900 hover:bg-white text-white hover:text-green-900 transition duration-300">
+        Tutup
+      </button>
+    </div>
+  </div>
+  

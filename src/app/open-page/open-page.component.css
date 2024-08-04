@@ -1,0 +1,63 @@
+.video-animasi,
+.gif-animasi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Posisi di atas background tapi di bawah konten */
+}
+.font-stalemate {
+    font-family: 'Stalemate', cursive;
+}
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-baskervville {
+    font-family: 'Baskervville SC', serif;
+}
+.screen-big {
+    position: fixed;
+    transform: scale(1.2);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .image-container {
+    width: 100%;
+    padding-top: 50%; /* 2:1 aspect ratio */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (min-width: 1024px) {
+    .image-container {
+      padding-top: 100%; /* 1:1 aspect ratio for desktop */
+    }
+  }
+
+  .blur {
+    filter: blur(5px);
+  }
+  .modal {
+    animation-duration: 0.9s;
+  }
+  

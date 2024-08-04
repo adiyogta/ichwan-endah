@@ -1,0 +1,55 @@
+/* wedding-gift.component.css */
+.atm-card {
+    aspect-ratio: 89 / 51;
+    width: 100%;
+    max-width: 280px; /* Sesuaikan ukuran maksimum sesuai kebutuhan */
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f0f0f0 25%, #ffffff 75%);
+    position: relative;
+  }
+
+  .atm-card .chip {
+    background-color: #d4af37;
+}
+
+.atm-card button {
+  white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atm-card img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.qris-bg {
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihacpDFdrqkFOI2ykEDsqY_c7KIyXOr1Bk7jz5_4lDBh2SqF8TM-PSUX92FvQg3GpCQ5z_FoD7TJ6bPkq9CrjhNEs-9rh0Kf25c=s1600-rw-v1');
+  background-position: center;
+  background-size: cover;
+}
+  
+  @media (min-width: 640px) {
+    .atm-card {
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .atm-card {
+      max-width: 360px;
+    }
+  }
+  .bg-card-2 {
+    position: relative;
+    background-image: url('https://lh3.googleusercontent.com/drive-viewer/AKGpihadD7-3s-7X8_lI9Kdr5ngq2KJHEhwM5CrnWPlDWWoPZgQ45xpd1af4C7jORNse8kitQ6EzUfGZ0YFqAJAK4de0NuoLZwTB7Q=s1600-rw-v1'),
+    url('https://lh3.googleusercontent.com/drive-viewer/AKGpihadD7-3s-7X8_lI9Kdr5ngq2KJHEhwM5CrnWPlDWWoPZgQ45xpd1af4C7jORNse8kitQ6EzUfGZ0YFqAJAK4de0NuoLZwTB7Q=s1600-rw-v1'),
+    url('https://lh3.googleusercontent.com/drive-viewer/AKGpihZ0XZo9U4SHmNEILUt7Hz2yAyBdVL2-qIkLUXY3YO7I_xhSyX_zaJMZfGem6XipjOkrqqFYJYdhwy_Kct2GmwAp5YiSbsIf2w=s1600-rw-v1');
+    image-rendering: optimizeQuality;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top, left bottom, center bottom;
+    opacity: 1;
+  }
+
