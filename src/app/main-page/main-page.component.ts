@@ -86,7 +86,7 @@ export class MainPageComponent implements AfterViewInit {
     this.renderer.removeClass(document.body, 'overflow-hidden');
   }
 
-  private targetDate = new Date('2024-08-07T09:00:00+07:00');
+  private targetDate = new Date('2024-08-12T09:00:00+07:00');
   
   countdown = signal({
     days: 0,
